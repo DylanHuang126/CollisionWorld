@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/view.js"></script>
+</head>
+<body>
+    <div style="top:3em; left:0em;">
+
+        <span><b>Ball</b></span>
+        <div>
+
+            <span>
+                <span>Please select ball's behavior: </span>
+                <select id="ballBehaviorSelect">
+                    <option value="straight" selected>Straight</option>
+                    <option value="falling">Falling</option>
+                    <option value="rotate">Rotate</option>
+                    <option value="twinkling">Twinkling</option>
+                    <option value="zoom in">Zoom In</option>
+                    <option value="zoom out">Zoom Out</option>
+                    <option value="static">Static</option>
+                    <option value="visibility">Visibility</option>
+                    <option value="twinkling rotate">Twinkling and Rotate</option>
+                    <option value="twinkling falling">Twinkling and Falling</option>
+                </select>
+            </span>
+        </div>
+
+        <div>
+            <span>Please select ball's strategy: </span>
+            <select id="ballInteractSelect">
+                <option value="null" selected>None</option>
+                <option value="cloaking">Cloaking</option>
+                <option value="stop">Stop</option>
+                <option value="change color">Change color</option>
+                <option value="zoom in">Zoom In</option>
+                <option value="zoom out">Zoom Out</option>
+                <option value="concentric">Concentric</option>
+            </select>
+            <br>
+            <span>* concentric strategy will randomly create 4 different kinds of shape in the center of a ball</span>
+        </div>
+
+        <div>
+            <span>Please select if the ball can switch strategy: </span>
+            <select id="ballCanSwitchStrat">
+                <option value="false" selected>No...</option>
+                <option value="true">Yes!</option>
+            </select>
+            <button id="btn-add">Add Ball</button>
+        </div>
+
+        <span><b>Fish</b></span>
+
+        <div>
+            <span>
+                <span>Please select fish's behavior: </span>
+                <select id="fishBehaviorSelect">
+                    <option value="straight" selected>Straight</option>
+                    <option value="falling">Falling</option>
+                    <option value="rotate">Rotate</option>
+                    <option value="static">Static</option>
+                </select>
+            </span>
+        </div>
+
+        <div>
+            <span>Please select fish's strategy: </span>
+            <select id="fishInteractSelect">
+                <option value="null" selected>None</option>
+                <option value="stop">Stop</option>
+            </select>
+        </div>
+
+        <div>
+            <span>Please select if the fish can switch strategy: </span>
+            <select id="fishCanSwitchStrat">
+                <option value="false" selected>No...</option>
+                <option value="true">Yes!</option>
+            </select>
+            <button id="btn-fish-add">Add Fish</button>
+        </div>
+
+        <span><b>Switch and Remove and Clear</b></span>
+
+        <div>
+            <span>
+                Please select what behavior all objects will switch to:
+            </span>
+            <select id="changeStrat">
+                <option value="straight" selected>Straight</option>
+                <option value="falling">Falling</option>
+                <option value="rotate">Rotate</option>
+                <option value="static">Static</option>
+            </select>
+            <button id="btn-switch">Switch</button>
+            <br>
+            <span>* only behaviors that ball and fish shared is allowed.</span>
+        </div>
+
+        <div>
+            <span>Please select the subset of objects with certain strategy to remove: </span>
+            <select id="removeStrat">
+                <option value="straight" selected>Straight</option>
+                <option value="falling">Falling</option>
+                <option value="rotate">Rotate</option>
+                <option value="twinkling">Twinkling</option>
+                <option value="zoom in">Zoom In</option>
+                <option value="zoom out">Zoom Out</option>
+                <option value="static">Static</option>
+                <option value="visibility">Visibility</option>
+                <option value="twinkling rotate">Twinkling and Rotate</option>
+                <option value="twinkling falling">Twinkling and Falling</option>
+            </select>
+            <button id="btn-remove">Remove</button>
+        </div>
+
+        <span>Clear the whole canvas: </span>
+        <button id="btn-clear">Clear</button>
+
+        <canvas width="800" height="800" style="border: 1px solid #000000; display: block"></canvas>
+    </div>
+
+</body>
+</html>
