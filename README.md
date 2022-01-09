@@ -1,8 +1,6 @@
 ## Collision World
 
 > ### Info
-
-Name: Liangying Huang <br>
 Heroku app url: https://lh49-hw4-collision.herokuapp.com/ <br>
 
 
