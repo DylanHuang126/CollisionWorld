@@ -27,13 +27,3 @@ Heroku app url: https://lh49-hw4-collision.herokuapp.com/ <br>
 
 * In HTML files, I use selection elements and let users choose object behaviors and strategies by it to avoid making too many buttons. The JQuery selector identity the selected attribute value and the "Add" button pass the value to the backend to generate correct object.
 * To draw concentric shape on a ball with the concentric interaction strategy. I utilized draw polygon function to draw polygon with different sides (basically reuse hw2's code to save development time).
-
----
-
-> ###  Peer review score
-
-lh50  (--/35) []<br>
-lx20  (--/35) []<br>
-lz65 (--/35) []<br>
-mc137 (--/35) []<br>
-mc143 (--/35) []
